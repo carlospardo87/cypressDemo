@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T20:38:53.777Z",
+    "end": "2021-04-30T20:39:15.861Z",
+    "duration": 22084,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca4d510c-7cd7-42b0-a780-25f73aa1f5a1",
+      "title": "",
+      "fullFile": "cypress/integration/mytest.spec.js",
+      "file": "cypress/integration/mytest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Purchase flow - first user",
+          "fullTitle": "Purchase flow - first user",
+          "timedOut": null,
+          "duration": 12766,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "const btnAddToCar = 'a[title=\"Add to cart\"]';\ncy.visit('http://automationpractice.com/index.php');\nconsole.log(\"click on the home page\");\ncy.get(btnAddToCar).eq(0).click();\nconsole.log(\"click on the reserve page\");\ncy.get('.button-medium > span').click();\nconsole.info(\"Fill first Last\");\ncy.get('.cart_navigation > .button > span').click();\ncy.get('#email').type(data.user);\ncy.get('#passwd').type(data.pass);\ncy.get('.page-heading').should('contain', 'Authentication');",
+          "err": {},
+          "uuid": "a41715b3-50ed-41b7-b77e-3fe0f0effcce",
+          "parentUUID": "ca4d510c-7cd7-42b0-a780-25f73aa1f5a1",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Purchase flow - second user",
+          "fullTitle": "Purchase flow - second user",
+          "timedOut": null,
+          "duration": 6149,
+          "state": "passed",
+          "speed": "slow",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "const btnAddToCar = 'a[title=\"Add to cart\"]';\ncy.visit('http://automationpractice.com/index.php');\nconsole.log(\"click on the home page\");\ncy.get(btnAddToCar).eq(0).click();\nconsole.log(\"click on the reserve page\");\ncy.get('.button-medium > span').click();\nconsole.info(\"Fill first Last\");\ncy.get('.cart_navigation > .button > span').click();\ncy.get('#email').type(data.user);\ncy.get('#passwd').type(data.pass);\ncy.get('.page-heading').should('contain', 'Authentication');",
+          "err": {},
+          "uuid": "f4712317-b146-4b5c-ac3d-b3cc01de26dc",
+          "parentUUID": "ca4d510c-7cd7-42b0-a780-25f73aa1f5a1",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "a41715b3-50ed-41b7-b77e-3fe0f0effcce",
+        "f4712317-b146-4b5c-ac3d-b3cc01de26dc"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 18915,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}

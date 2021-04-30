@@ -1,0 +1,19 @@
+{
+  "name": "cypressdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --reporter mochawesome",
+    "cypress": "npx cypress open",
+    "parallel": "npx cypress run --record --key dca047c0-5041-4af1-8725-9fbbf6d95668 --parallel  --spec cypress/integration/examples/**/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "jasmine-data-provider": "^2.2.0",
+    "mocha-data-driven": "^1.0.1",
+    "mochawesome": "^6.2.2"
+  }
+}
