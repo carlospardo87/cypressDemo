@@ -20,13 +20,13 @@ using(
 
       cy.visit('http://automationpractice.com/index.php')
 
-      console.log("click on the home page")
+      cy.log("click on the home page")
       cy.get(btnAddToCar).eq(0).click()
 
-      console.log("click on the reserve page")
+      cy.log("click on the reserve page")
       cy.get('.button-medium > span').click()
 
-      console.info("Fill first Last")
+      cy.log("Fill first Last")
       cy.get('.cart_navigation > .button > span').click()
 
       cy.get('#email').type(data.user)
